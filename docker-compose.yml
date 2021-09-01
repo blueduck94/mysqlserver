@@ -15,7 +15,7 @@ services:
       - mssqlvolume:/var/opt/mssql/data
       - ./datastore:/var/opt/mssql/backup      # backup store location
     ports:
-      - "1433:1433"                     # cổng kết nối
+      - "1433:1433"                    
 
 volumes:
     mssqlvolume:
