@@ -10,7 +10,7 @@
 ```
 docker-compose up -d
 ```
-- run this command to exec bash in container
+- run this command to exec bash in container then run cmd in the next step
 ```
 docker exec -it mssqlserver bash
 ```
