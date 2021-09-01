@@ -3,17 +3,17 @@ version: "3"
 services:
   fosft-mssql:
     image: "mcr.microsoft.com/mssql/server:2017-latest"
-    container_name: mssqlserver         # tên container
+    container_name: mssqlserver         
     restart: always
     hostname: mssql
     environment:
-      SA_PASSWORD: Password123          #Thiết lập password
+      SA_PASSWORD: Password123         
       ACCEPT_EULA: Y
       # Express:
 
     volumes:
-      - mssqlvolume:/var/opt/mssql/data # thư mục lưu DB
-      - ./datastore:/var/opt/mssql/backup      # thư  mục chứa file backup
+      - mssqlvolume:/var/opt/mssql/data
+      - ./datastore:/var/opt/mssql/backup      # backup store location
     ports:
       - "1433:1433"                     # cổng kết nối
 
