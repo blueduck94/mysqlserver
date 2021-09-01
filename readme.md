@@ -4,6 +4,7 @@
 - Install Azure Data Studio [here](https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15)
 - download [AdventureWorksDW2017](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak) and [AdventureWorks2017](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2017.bak)
 ## Setup ENV
+- create folder 'datastore' in the same location with docker-compose.yml file 
 - copy 2 files bak AdventureWorks into dir /datastore/
 - run this command in the folder which include docker-compose.yml to setup sql server 2017
 ```
